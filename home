@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Eagle</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#f8f9fb; color:#333; line-height:1.6; }
+    header { background:linear-gradient(135deg,#111,#333); color:#fff; padding:3rem 1rem; text-align:center; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { margin:0.5rem 0 1rem; font-size:1.2rem; }
+    header button { background:#ffcc00; border:none; padding:0.8rem 1.5rem; font-size:1rem; border-radius:6px; cursor:pointer; }
+    header button:hover { background:#e6b800; }
+
+    section { padding:3rem 1rem; max-width:1100px; margin:auto; }
+    h2 { text-align:center; margin-bottom:2rem; }
+
+    /* About */
+    .about { background:#fff; padding:2rem; border-radius:10px; box-shadow:0 3px 8px rgba(0,0,0,0.1); }
+
+    /* Product Grid */
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .card { background:#fff; padding:1.5rem; border-radius:10px; box-shadow:0 3px 8px rgba(0,0,0,0.1); text-align:center; }
+    .card h3 { margin:0.5rem 0; }
+    .card button { background:#111; color:#fff; border:none; padding:0.7rem 1.3rem; border-radius:6px; cursor:pointer; }
+    .card button:hover { background:#444; }
+
+    /* How it works */
+    .steps { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+    .step { flex:1; min-width:250px; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+
+    /* Trust section */
+    .trust { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+    .trust-card { flex:1; min-width:250px; background:#fff; padding:1rem; border-radius:8px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+
+    /* Testimonials */
+    .testimonial { background:#fff; padding:1.2rem; margin:1rem 0; border-left:4px solid #111; border-radius:6px; }
+
+    /* FAQ */
+    details { margin:1rem 0; background:#fff; padding:1rem; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.05); }
+    details summary { font-weight:bold; cursor:pointer; }
+
+    /* Contact */
+    .contact { text-align:center; }
+    .contact a { display:inline-block; margin:0.5rem; padding:0.8rem 1.2rem; background:#111; color:#fff; text-decoration:none; border-radius:6px; }
+    .contact a:hover { background:#444; }
+
+    footer { background:#111; color:#fff; padding:2rem 1rem; text-align:center; margin-top:2rem; }
+    footer a { color:#ffcc00; margin:0 0.5rem; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header>
+    <h1>Circular Eagle</h1>
+    <p>Empowering Entrepreneurs • Growth Tools • Digital Products</p>
+    <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>About Us</h2>
+    <div class="about">
+      <p>At Circular Eagle, we provide digital tools, ebooks, and strategies to help you scale your online presence, boost sales, and achieve growth in today’s digital economy.</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>WhatsApp Mastery</h3>
+        <p>Learn how to grow your business using WhatsApp Business like a pro.</p>
+        <button onclick="window.location.href='https://forms.gle/YOUR_FORM_LINK'">Order Now</button>
+      </div>
+      <div class="card">
+        <h3>Social Media Growth Guide</h3>
+        <p>Proven methods to boost followers and engagement across platforms.</p>
+        <button onclick="window.location.href='https://forms.gle/YOUR_FORM_LINK'">Order Now</button>
+      </div>
+      <div class="card">
+        <h3>Business Toolkit</h3>
+        <p>Essential resources for online entrepreneurs in one package.</p>
+        <button onclick="window.location.href='https://forms.gle/YOUR_FORM_LINK'">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section>
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step"><b>1. Browse Products</b><br>Choose what you want.</div>
+      <div class="step"><b>2. Make Payment</b><br>Transfer via bank/crypto.</div>
+      <div class="step"><b>3. Upload Proof</b><br>Submit payment screenshot.</div>
+      <div class="step"><b>4. Receive Product</b><br>We confirm & deliver instantly.</div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section>
+    <h2>Why Choose Circular Eagle?</h2>
+    <div class="trust">
+      <div class="trust-card">✅ Instant Delivery</div>
+      <div class="trust-card">✅ Secure Transactions</div>
+      <div class="trust-card">✅ Affordable Pricing</div>
+      <div class="trust-card">✅ Trusted by Many</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <h2>What People Say</h2>
+    <div class="testimonial">“Circular Eagle changed my business game. Very affordable and effective!”</div>
+    <div class="testimonial">“I was skeptical at first, but delivery was smooth and fast.”</div>
+    <div class="testimonial">“Best WhatsApp business guide I’ve ever bought.”</div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <details>
+      <summary>How do I pay?</summary>
+      <p>You can pay via bank transfer or other available methods listed on the order form.</p>
+    </details>
+    <details>
+      <summary>When do I receive my product?</summary>
+      <p>Once payment is confirmed, delivery is instant via email or WhatsApp.</p>
+    </details>
+    <details>
+      <summary>Do you give refunds?</summary>
+      <p>Refunds are only given if payment was made but product wasn’t delivered.</p>
+    </details>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <a href="https://wa.me/YOUR_NUMBER">Chat on WhatsApp</a>
+    <a href="mailto:your@email.com">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Circular Eagle. All rights reserved.</p>
+    <p>
+      <a href="#">Home</a> | <a href="#products">Products</a> | <a href="#contact">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
